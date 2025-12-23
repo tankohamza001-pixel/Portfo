@@ -1,0 +1,271 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --bg: #cc9f5c;
+  --bgColor: #1c5a8d;
+  --light: #ec9d0a;
+  --lightColor:  #f8f9fa;
+  --hoverColor: #6e6ea0;
+  --softColor: #dfd9ff;
+  --textColor: #00ffff;
+}
+
+
+/*--------------------------------------------------------------
+  # Navbar Section
+  --------------------------------------------------------------*/
+  body {
+  background-color: var(--bgColor);
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.navbar {
+  padding: 0;
+  background: var(--lightColor)
+  
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: end;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--bgColor);
+  white-space: nowrap;
+  transition: 0.3s;
+  
+}
+
+.logo-bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: var(--light);
+}
+
+/*--------------------------------------------------------------
+# General Title Section
+--------------------------------------------------------------*/
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--testColor);
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.section-title p {
+  color: var(--hoverColor);
+
+  font-size: 26px;
+}
+/*--------------------------------------------------------------
+# MainPage Section
+--------------------------------------------------------------*/
+.mainPage {
+  width: 100%;
+  height: 100%;
+  background: var(--bgColor);
+}
+
+.mainPage .king h1 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 900;
+  color: var(--lightColor);
+}
+
+.mainPage .king h2 {
+  color: var(--softColor);
+  margin: 15px 0 0 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.mainPage .uper .img-head {
+  color: var(--lightColor);
+  font-size: 26px;
+  
+}
+.mainPage .king p{
+  color: var(---hoverColor);
+  margin: 20px 0 0 0;
+  font-size: 20px;
+
+}
+.mainPage .uper .btn-get-started {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: var(--lightColor);
+  background: linear-gradient(var(--testColor), var(--softColor));
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.mainPage .uper .btn-get-started span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.mainPage .uper .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.mainPage .uper .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+
+.mainPage .uper img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.mainPage .uper .hero-img {
+  text-align: right;
+}
+
+@media (min-width: 1024px) {
+  .mainPage {
+    background-attachment: fixed;
+  }
+  .mainPage .uper .hero-img img {
+    height: 85%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainPage .d-flex.flex-row.gap-4 {
+    flex-direction: column;
+    align-items: center;
+  }
+.btn.bg-warning {
+  box-shadow: 0 0 10px rgba(255, 196, 0, 0.6);
+}
+.btn.bg-warning:hover {
+  box-shadow: 0 0 20px rgba(255, 196, 0, 0.9);
+}
+
+
+  .mainPage .uper img {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .mainPage .uper .hero-img {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .mainPage .uper .hero-img img {
+    width: 100%;
+  }
+
+  .mainPage .uper h1 {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .mainPage .uper h2 {
+    font-size: 18px;
+  }
+}
+.section{
+  background-color: var(--bgColor);
+  margin-top: 50px;
+
+}
+.sectionTitle h3{
+  font-weight: 900px;
+  font-size: 25px;
+  color: var(--light);
+
+}
+.sectionTitle h4{
+  font-weight: 900px;
+  font-size: 25px;
+  color:var(--lightColor);
+  padding-left: 5px;
+
+}
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--testColor);
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.section-title p {
+  color: var(--hoverColor);
+
+  font-size: 26px;
+}
+.about p{
+  font-size: 18px;
+  
+}
+.card {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgb(22, 154, 163);
+  border-color: #ffc400;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  aspect-ratio: 1 / 1; /* keeps it square */
+  object-fit: cover;
+}
