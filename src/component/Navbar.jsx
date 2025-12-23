@@ -23,7 +23,7 @@ export default function Navbar() {
         </Link>
 
         <button
-          className="navbar-toggler shadow-none"
+          className=" navbar-toggler rounded-2 bg-light shadow-none"
           type="button"
           onClick={toggleNavbar}
           aria-controls="main-nav"
